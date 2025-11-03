@@ -51,7 +51,7 @@ function displayForecast(forecastData) {
     hourlyContainer.appendChild(div);
   });
 
-  const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const now = new Date();
   const nextDays = [
     dayNames[(now.getDay() + 1) % 7],
@@ -95,3 +95,4 @@ document.getElementById("city").addEventListener("keypress", function (event) {
     getWeather();
   }
 });
+
