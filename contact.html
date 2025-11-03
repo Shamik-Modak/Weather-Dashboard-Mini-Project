@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - WeatherNow</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  
+  <header>
+    <div class="header-left">
+      <img src="logo.png" alt="WeatherNow Logo" class="logo">
+      <h1>WeatherNow</h1>
+    </div>
+    <nav id="navi">
+      
+        <a href="home.html">Home</a>
+        <a href="weather.html">Forecast</a>
+        <a href="about.html" >About</a>
+        <a href="contact.html" class="active">Contact</a>
+      
+    </nav>
+  </header>
+
+  <section class="contact" id="contact">
+  <div class="contact-container">
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <p>Have questions, feedback, or suggestions? We'd love to hear from you!</p>
+
+      <div class="contact-details">
+        <p><strong>📍 Address:</strong> Nagpur, Maharashtra, India</p>
+        <p><strong>📧 Email:</strong> support@weathernow.com</p>
+        <p><strong>📞 Phone:</strong> +91 98765 43210</p>
+      </div>
+
+      <div class="social-links">
+        <a href="#"><img src="instagram-logo-facebook-svgrepo-com.svg" alt="Instagram"></a>
+        <a href="#"><img src="twitter-154-svgrepo-com.svg" alt="Twitter"></a>
+        <a href="#"><img src="facebook-svgrepo-com.svg" alt="Facebook"></a>
+      </div>
+    </div>
+
+    <form class="contact-form" onsubmit="return false;">
+      <h3>Send us a Message</h3>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message..." rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+ <footer>
+    <p>© 2025 WeatherNow. All rights reserved.</p>
+    <p>Designed with ☀️ and ☁️ by Team WeatherNow</p>
+  </footer>
+</body>
+
+<script>
+document.querySelector('.contact-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  alert('Thank you! Your message has been sent successfully.');
+});
+</script>
+
+</html>

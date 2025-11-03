@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeatherNow | Your Smart Weather Companion</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  
+  <header>
+    <div class="header-left">
+      <img src="logo.png" alt="WeatherNow Logo" class="logo">
+      <h1>WeatherNow</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="weather.html">Forecast</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Stay Ahead of the Weather ☀️</h2>
+      <p>Get accurate, real-time forecasts and plan your day confidently with WeatherNow — your smart weather companion for every moment.</p>
+      <div class="hero-buttons">
+        <a href="weather.html" class="btn-primary">Check Forecast</a>
+        <a href="about.html" class="btn-secondary">Learn More</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="clouds-sun_10960943.png" alt="Weather Illustration">
+    </div>
+  </section>
+
+  
+  <section class="features">
+    <h2>Why Choose WeatherNow?</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <img src="target_17784545.png" alt="Accuracy Icon">
+        <h3>Accurate Forecasts</h3>
+        <p>Powered by trusted data sources to bring you reliable real-time weather insights.</p>
+      </div>
+      <div class="feature-card">
+        <img src="layers.png" alt="UI Icon">
+        <h3>Beautiful Interface</h3>
+        <p>Designed with simplicity and elegance — clean visuals, intuitive navigation.</p>
+      </div>
+      <div class="feature-card">
+        <img src="worldwide.png" alt="Global Icon">
+        <h3>Worldwide Coverage</h3>
+        <p>From local neighborhoods to global destinations, WeatherNow covers it all.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="live-weather">
+    <h2>Live Weather Preview</h2>
+    <div class="weather-widget">
+      <h3 id="city">Nagpur</h3>
+      <img id="icon" src="assets/icons/clear.png" alt="Weather Icon">
+      <h4 id="temp">--°C</h4>
+      <p id="desc">Loading...</p>
+    </div>
+  </section>
+
+ 
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 WeatherNow. All rights reserved.</p>
+      <p>Designed with ☀️ and ☁️ by Team WeatherNow</p>
+    </div>
+  </footer>
+
+  <script src="home.js"></script>
+</body>
+</html>

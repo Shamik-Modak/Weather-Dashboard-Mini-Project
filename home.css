@@ -1,0 +1,196 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  color: #222;
+  overflow-x: hidden;
+}
+
+
+header {
+  background: linear-gradient(90deg, #00b4d8, #0077b6);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 45px;
+  margin-right: 12px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  text-decoration: underline;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 100px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  color: #023e8a;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.hero-buttons .btn-primary,
+.hero-buttons .btn-secondary {
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #0077b6;
+  color: white;
+  margin-right: 15px;
+}
+
+.btn-primary:hover {
+  background: #023e8a;
+}
+
+.btn-secondary {
+  border: 2px solid #0077b6;
+  color: #0077b6;
+}
+
+.btn-secondary:hover {
+  background: #0077b6;
+  color: white;
+}
+
+.hero-image img {
+  width: 350px;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+
+.features {
+  text-align: center;
+  padding: 80px 40px;
+  background: #f5f9ff;
+}
+
+.features h2 {
+  color: #023e8a;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+
+.live-weather {
+  text-align: center;
+  padding: 70px 20px;
+  background: linear-gradient(180deg, #caf0f8, #90e0ef);
+}
+
+.live-weather h2 {
+  font-size: 2rem;
+  color: #023e8a;
+  margin-bottom: 25px;
+}
+
+.weather-widget {
+  background: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  padding: 25px 50px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+.weather-widget img {
+  width: 80px;
+  margin: 15px 0;
+}
+
+
+footer {
+  background: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeatherNow Dashboard</title>
+  <link rel="stylesheet" href="weather.css" />
+  <link rel="stylesheet" href="https://unpkg.com/meteocons/css/meteocons.css">
+
+  <script src="https://kit.fontawesome.com/a2d9d6f1d1.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+  
+
+</head>
+<body>
+  
+  <header>
+    <div class="logo">
+    <img src="logo.png" alt="WeatherNow Logo" class="logo">
+    <h2>WeatherNow</h2>
+  </div>
+    </div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="weather.html">Forecast</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+
+  <main>
+    <div class="container">
+      <div class="search-box">
+        <input type="text" id="city" placeholder="Search for a city..." />
+        <button onclick="getWeather()"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+      <div class="weather-info">
+        <div class="left-panel">
+          <div class="time-date">
+            <h2 id="time">--:--</h2>
+            <p id="date">Loading...</p>
+          </div>
+          <div class="current-weather">
+            <img id="weather-icon" src="p.webp" alt="Weather Icon">
+            <h1 id="temperature">--°C</h1>
+            <h3 id="description">--</h3>
+            <p id="location">--</p>
+            <p id="feels-like">Feels like: --°C</p>
+          </div>
+        </div>
+
+        <div class="right-panel">
+          <div class="forecast">
+            <h3>Hourly Forecast</h3>
+            <div id="hourly-forecast" class="forecast-grid"></div>
+          </div>
+
+          <div class="forecast">
+            <h3>3-Day Forecast</h3>
+            <div id="daily-forecast" class="forecast-grid"></div>
+          </div>
+
+          <div class="details">
+            <h3>Additional Details</h3>
+            <p>Humidity: <span id="humidity">--%</span></p>
+            <p>Wind: <span id="wind">-- km/h</span></p>
+            <p>UV Index: <span id="uv">--</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  
+  <footer>
+    <footer>
+    <p>© 2025 WeatherNow. All rights reserved.</p>
+    <p>Designed with ☀️ and ☁️ by Team WeatherNow</p>
+  </footer>
+  </footer>
+
+  <script src="weather.js"></script>
+</body>
+</html>
